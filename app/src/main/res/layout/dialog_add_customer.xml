@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <TextView
+        android:text="Customer Name *"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:textColor="@color/text_muted"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"/>
+
+    <EditText
+        android:id="@+id/etCustomerName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="e.g. Ahmed Khan"
+        android:inputType="textPersonName"
+        android:background="@color/surface"
+        android:padding="12dp"
+        android:layout_marginBottom="14dp"
+        android:textColor="@color/text"
+        android:textColorHint="@color/text_muted"/>
+
+    <TextView
+        android:text="Phone Number"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:textColor="@color/text_muted"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"/>
+
+    <EditText
+        android:id="@+id/etCustomerPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="e.g. 0300-1234567"
+        android:inputType="phone"
+        android:background="@color/surface"
+        android:padding="12dp"
+        android:layout_marginBottom="14dp"
+        android:textColor="@color/text"
+        android:textColorHint="@color/text_muted"/>
+
+    <TextView
+        android:text="Address"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:textColor="@color/text_muted"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"/>
+
+    <EditText
+        android:id="@+id/etCustomerAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="e.g. Shop 5, Main Bazaar"
+        android:inputType="textMultiLine"
+        android:background="@color/surface"
+        android:padding="12dp"
+        android:textColor="@color/text"
+        android:textColorHint="@color/text_muted"/>
+
+</LinearLayout>

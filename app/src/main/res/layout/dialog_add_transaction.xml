@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:text="Item Name *"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:textColor="@color/text_muted"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"/>
+
+        <EditText
+            android:id="@+id/etItemName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="e.g. Flour, Rice, Sugar"
+            android:inputType="textCapWords"
+            android:background="@color/surface"
+            android:padding="12dp"
+            android:layout_marginBottom="14dp"
+            android:textColor="@color/text"
+            android:textColorHint="@color/text_muted"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_marginBottom="14dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_marginEnd="6dp">
+
+                <TextView
+                    android:text="Quantity *"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/text_muted"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dp"/>
+
+                <EditText
+                    android:id="@+id/etQuantity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="e.g. 5"
+                    android:inputType="numberDecimal"
+                    android:background="@color/surface"
+                    android:padding="12dp"
+                    android:textColor="@color/text"
+                    android:textColorHint="@color/text_muted"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_marginStart="6dp">
+
+                <TextView
+                    android:text="Unit Price (Rs.) *"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/text_muted"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dp"/>
+
+                <EditText
+                    android:id="@+id/etUnitPrice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="e.g. 100"
+                    android:inputType="numberDecimal"
+                    android:background="@color/surface"
+                    android:padding="12dp"
+                    android:textColor="@color/text"
+                    android:textColorHint="@color/text_muted"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Auto calculated total -->
+        <TextView
+            android:id="@+id/tvCalculatedTotal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Total: Rs. 0"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/primary"
+            android:background="@color/accent_light"
+            android:padding="12dp"
+            android:layout_marginBottom="14dp"/>
+
+        <TextView
+            android:text="Amount Paid (Rs.)"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:textColor="@color/text_muted"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"/>
+
+        <EditText
+            android:id="@+id/etAmountPaid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="0 if nothing paid yet"
+            android:inputType="numberDecimal"
+            android:background="@color/surface"
+            android:padding="12dp"
+            android:layout_marginBottom="14dp"
+            android:textColor="@color/text"
+            android:textColorHint="@color/text_muted"/>
+
+        <TextView
+            android:text="Payment Status"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:textColor="@color/text_muted"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"/>
+
+        <Spinner
+            android:id="@+id/spinnerStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/surface"
+            android:padding="12dp"
+            android:layout_marginBottom="14dp"/>
+
+        <TextView
+            android:text="Notes (optional)"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:textColor="@color/text_muted"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"/>
+
+        <EditText
+            android:id="@+id/etNotes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Any extra notes..."
+            android:inputType="textMultiLine"
+            android:minLines="2"
+            android:background="@color/surface"
+            android:padding="12dp"
+            android:textColor="@color/text"
+            android:textColorHint="@color/text_muted"/>
+
+    </LinearLayout>
+
+</ScrollView>
