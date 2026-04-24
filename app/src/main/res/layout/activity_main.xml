@@ -5,7 +5,6 @@
     android:orientation="vertical"
     android:background="@color/bg">
 
-    <!-- TOP BAR -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -34,7 +33,6 @@
 
     </LinearLayout>
 
-    <!-- DASHBOARD CARD -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -45,6 +43,7 @@
         android:layout_marginEnd="16dp"
         android:layout_marginTop="16dp"
         android:layout_marginBottom="8dp">
+
         <TextView
             android:text="Total Outstanding"
             android:textSize="12sp"
@@ -126,7 +125,6 @@
 
     </LinearLayout>
 
-    <!-- CUSTOMERS HEADER -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -157,7 +155,6 @@
 
     </LinearLayout>
 
-    <!-- CUSTOMER LIST -->
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvCustomers"
         android:layout_width="match_parent"
@@ -167,7 +164,6 @@
         android:paddingEnd="16dp"
         android:clipToPadding="false"/>
 
-    <!-- EMPTY STATE -->
     <LinearLayout
         android:id="@+id/layoutEmpty"
         android:layout_width="match_parent"
